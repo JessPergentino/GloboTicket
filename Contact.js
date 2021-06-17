@@ -23,7 +23,7 @@ const Contact = ({ navigation }) => {
             </Text>
             <TextInput
                 style={styles.txtinput}
-                onChange={name => setFormName(name)}
+                onChangeText={name => setFormName(name)}
                 value={formName}
                 autoCapitalize="words"
                 selectTextOnFocus={true}
@@ -34,7 +34,7 @@ const Contact = ({ navigation }) => {
             </Text>
             <TextInput
                 style={styles.txtinput}
-                onChange={email => setFormEmail(email)}
+                onChangeText={email => setFormEmail(email)}
                 value={formEmail}
                 selectTextOnFocus={true}
             />
@@ -44,7 +44,7 @@ const Contact = ({ navigation }) => {
             </Text>
             <TextInput
                 style={styles.txtinput}
-                onChange={phone => setFormPhoneNumber(phone)}
+                onChangeText={phone => setFormPhoneNumber(phone)}
                 value={formPhoneNumber}
                 selectTextOnFocus={true}
             />
@@ -54,7 +54,7 @@ const Contact = ({ navigation }) => {
             </Text>
             <TextInput
                 style={styles.multitxtinput}
-                onChange={message => setFormMessage(message)}
+                onChangeText={message => setFormMessage(message)}
                 value={formMessage}
                 multiline={true}
                 selectTextOnFocus={true}
